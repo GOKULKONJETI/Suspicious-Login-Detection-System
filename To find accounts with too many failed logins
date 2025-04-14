@@ -1,0 +1,6 @@
+SELECT username, ip_address, COUNT(*) as failed_attempts
+FROM login_attempts
+WHERE success = 0
+AND timestamp > NOW() - INTERVAL 1 HOUR
+GROUP BY username, ip_address
+HAVING failed_attempts > 3;
