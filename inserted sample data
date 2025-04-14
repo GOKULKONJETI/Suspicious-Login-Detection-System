@@ -1,0 +1,4 @@
+INSERT INTO login_attempts (username, ip_address, timestamp, success)
+VALUES ('jdoe', '192.168.1.1', '2025-04-14 10:00:00', 0),
+       ('jdoe', '192.168.1.1', '2025-04-14 10:01:00', 0),
+       ('jdoe', '192.168.1.1', '2025-04-14 10:02:00', 0);
